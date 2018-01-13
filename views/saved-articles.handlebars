@@ -1,0 +1,14 @@
+<h1>Mongo Scraper</h1>
+
+<h2>Saved Articles</h2>
+
+<ul>
+  {{#each articles}}
+  	<li>
+      <p><span class="label">Title:</span> {{this.title}}</p>
+      <p><span class="label">Description:</span> {{this.description}}</p>
+
+      <button data-id="{{this.id}}" class="remove">Remove Article</button>
+  	</li>
+  {{/each}}
+</ul>
